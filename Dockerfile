@@ -9,7 +9,7 @@ WORKDIR /app
 
 COPY --chown=node:node . ./
 
-RUN npm install
+RUN yarn --network-timeout=100000
 
 EXPOSE 3000
 
